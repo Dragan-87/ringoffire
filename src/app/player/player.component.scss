@@ -1,0 +1,17 @@
+.player {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > img {
+    width: 100px;
+    height: auto;
+    background-color: lighten($color: #404040, $amount: 20);
+    border-radius: 50%;
+  }
+  > span {
+    color: #fff;
+    font-size: 24px;
+
+  }
+}
