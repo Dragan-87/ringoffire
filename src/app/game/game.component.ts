@@ -1,13 +1,13 @@
+import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, output } from '@angular/core';
 import { Game } from '../../models/game';
 import { PlayerComponent } from '../player/player.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialog} from '@angular/material/dialog';
 import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player.component';
 import { FormsModule } from '@angular/forms';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-game',
@@ -15,12 +15,13 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     PlayerComponent,
-    MatButtonModule,
-    MatIconModule,
-    MatDialogModule,
-    MatFormFieldModule,
     DialogAddPlayerComponent,
-    FormsModule
+    FormsModule,
+    MatFormField,
+    MatLabel,
+    MatIcon,
+    MatButtonModule,
+
   ],
   templateUrl: './game.component.html',
   styleUrl: './game.component.scss'
