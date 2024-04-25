@@ -54,6 +54,8 @@ export class GameComponent {
       this.currentCard = this.game.stack.pop() ?? "card_empty"
       this.pickCardAnimation = true;
       this.game.playedCards.push(this.currentCard);
+      this.game.currentPlayer++;
+      this.game.currentPlayer = this.game.currentPlayer % this.game.players.length;
       setTimeout(() => {
         this.pickCardAnimation = false;
       }, 1500);

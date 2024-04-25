@@ -1,4 +1,4 @@
 <mat-card class="game-card-info">
-  <mat-card-title class="padding">{{title}}</mat-card-title>
-  <mat-card-content>{{rule}}</mat-card-content>
+  <mat-card-title class="padding">{{card ? title : "Draw a card"}}</mat-card-title>
+  <mat-card-content>{{ card ? rule: "To pick a card you have to click on the top card"}}</mat-card-content>
 </mat-card>
