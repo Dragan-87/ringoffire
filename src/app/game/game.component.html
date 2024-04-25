@@ -4,14 +4,14 @@
 <div class="field">
   <div class="card-stack">
     @for(count of [1,2,3,4,5]; track count; let index = $index) {
-    <img [ngStyle]="{'right.px': index * 5}" src="./../../assets/img/game-cards/card_cover.png" alt="" srcset="">
+    <img [ngStyle]="{'right.px': index * 5}" src="../../assets/img/game-cards/card_cover.png" alt="" srcset="">
     }
     <img (click)="takeCard()" class="top-card" [ngStyle]="{'right.px': 25}"
-      src="./../../assets/img/game-cards/card_cover.png" alt="" srcset="">
+      src="../../assets/img/game-cards/card_cover.png" alt="" srcset="">
     <img (click)="takeCard()" *ngIf="pickCardAnimation" class="pick-card" [ngStyle]="{'right.px': 25}"
-      src="./../../assets/img/game-cards/{{currentCard}}.png" alt="" srcset="">
+      src="../../assets/img/game-cards/{{currentCard}}.png" alt="" srcset="">
     @for(card of game.playedCards; track card) {
-    <img [ngStyle]="{'right.px': 25}" class="pick-card" src="./../../assets/img/game-cards/{{card}}.png" alt=""
+    <img [ngStyle]="{'right.px': 25}" class="pick-card" src="../../assets/img/game-cards/{{card}}.png" alt=""
       srcset="">
     }
   </div>
