@@ -8,13 +8,15 @@ import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player
 import { FormsModule } from '@angular/forms';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
+import { GameCardInfoComponent } from '../game-card-info/game-card-info.component';
 
 @Component({
   selector: 'app-game',
   standalone: true,
   imports: [
-    CommonModule,
     PlayerComponent,
+    GameCardInfoComponent,
+    CommonModule,
     DialogAddPlayerComponent,
     FormsModule,
     MatFormField,

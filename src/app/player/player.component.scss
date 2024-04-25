@@ -15,3 +15,10 @@
 
   }
 }
+
+.player-active {
+  background-color: #404040;
+  > img {
+    background-color: yellow;
+  }
+}
