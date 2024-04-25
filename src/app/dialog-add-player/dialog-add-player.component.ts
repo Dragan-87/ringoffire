@@ -1,29 +1,36 @@
 import { MatInputModule } from '@angular/material/input';
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MatDialogActions, MatDialogContent, MatDialogTitle } from '@angular/material/dialog';
-import { MatFormField, MatLabel } from '@angular/material/form-field';
-import { MatButton } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle } from '@angular/material/dialog';
+
+
 
 @Component({
   selector: 'app-dialog-add-player',
   standalone: true,
   imports: [
-    FormsModule,
-    MatDialogContent,
-    MatFormField,
-    MatLabel,
-    MatDialogActions,
+    MatFormFieldModule,
     MatInputModule,
-    MatButton,
-    MatDialogTitle
+    FormsModule,
+    MatButtonModule,
+    MatDialogTitle,
+    MatDialogContent,
+    MatDialogActions,
+    MatDialogClose,
+
   ],
   templateUrl: './dialog-add-player.component.html',
   styleUrl: './dialog-add-player.component.scss'
 })
 export class DialogAddPlayerComponent {
-  name: string = "";
+name: string = "";
 
   constructor() {
+  }
+
+  onNoClick() {
+
   }
 }
