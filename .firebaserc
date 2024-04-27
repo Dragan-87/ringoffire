@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ringoffire-fbc8b": {
+      "hosting": {
+        "ringoffire": [
+          "ringoffire-fbc8b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ringoffire-fbc8b"
+  }
+}
